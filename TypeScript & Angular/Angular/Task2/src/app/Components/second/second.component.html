@@ -1,0 +1,27 @@
+<p>******************************************************************</p>
+
+<div class="container">
+<label for="name">Name</label>
+<input type="text" name="name" [(ngModel)]="userName">
+<div *ngIf="!nameValid">Name Length Must Be in Range 3-15</div>
+<br>
+<label for="age">Age</label>
+<input type="number" name="age" [(ngModel)]="userAge">
+<div *ngIf="!ageValid">Age Must Be in Range 18-50</div>
+<br>
+<button (click)="displayInfo()">Save</button>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of students">
+            <td>{{s.name}}</td>
+            <td>{{s.age}}</td>
+        </tr>
+    </tbody>
+</table>

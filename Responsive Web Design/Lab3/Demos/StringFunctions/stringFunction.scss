@@ -1,0 +1,31 @@
+$a: unquote("hello world"); // Removes the quotes, if any, around a string
+$b: quote(hello); // Adds quotes to an unquoted string
+$c: quote("hello harry"); // Returns a quoted string unmodified
+$d: str-length("hello world"); // Returns the number of characters in a string
+$e: str-index("Hello", "H"); // Returns the index of the first occurrence of $substring in $string.
+$f: str-index("hello", "H"); // If there is no such occurrence, returns null.
+$g: to-upper-case("hello"); // Converts a string to upper case.
+$h: to-lower-case("Hello"); // Converts a string to lower case.
+
+// Inserts the string specified as $insert at the specified index position inside string
+// str_insert($string, $insert, $index)
+$insert: str-insert(" harry", "hello", 0);
+
+// Extracts a substring from $string.
+// The substring will begin at index $start-at and optionally ending at position $end-at.
+// str_slice($string, $start-at, $end-at:-1)
+$slice: str-slice("hello, world", 8);
+$slice-end: str-slice("hello, world", 8, 9);
+
+/* Just for demo */
+.a { @debug "any text" $a; }
+.b {@debug " test is:" $b; }
+.c { @debug $c; }
+.d { @debug $d; }
+.e { @debug $e; }
+.f { @debug $f; }
+.g { @debug $g; }
+.h { @debug $h; }
+.insert {@debug $insert; }
+.slice { @debug $slice; }
+.slice-end {@debug $slice-end; }

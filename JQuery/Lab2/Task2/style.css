@@ -1,0 +1,68 @@
+.buttons-container {
+  padding-left: 28vw;
+  padding-top: 50px;
+}
+.buttons-list li {
+  display: inline;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  background-color: hotpink;
+  color: whitesmoke;
+  padding: 15px;
+  list-style-type: none;
+  cursor: grabbing;
+
+}
+.display-container {
+  margin-top: 100px;
+  /* border: 5px solid red; */
+  width: 500px;
+  height: 400px;
+  margin-left: 485px;
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+.about-content {
+  text-align: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left-arrow {
+  font-size: 40px;
+  position: relative;
+  bottom: 105px;
+}
+.right-arrow {
+  font-size: 40px;
+  position: relative;
+  bottom: 105px;
+  left: 450px;
+}
+.img-content {
+  width: 305px;
+  height: 290px;
+  padding-left: 55px;
+  padding-top: 55px;
+}
+.drop-down-menu li {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  background-color: hotpink;
+  color: whitesmoke;
+  padding: 15px;
+  width: 105px;
+  list-style-type: none;
+  margin-top: 1px;
+  cursor: grabbing;
+
+}
+.drop-down-menu {
+    margin-left: 230px;}
+
+input{
+    margin:20px;
+}
+form{
+    text-align: center;
+}

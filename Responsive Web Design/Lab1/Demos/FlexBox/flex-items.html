@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: gray;
+            /* To show Flex-grow */
+            /* width:400px;
+            height: 500px; */
+        }
+
+        .flex-item {
+            background-color: hotpink;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Order Property -->
+    <div class="flex-container">
+        <div class="flex-item" style="order: 3">Item1</div>
+        <div class="flex-item" style="order: 1">Item2</div>
+        <div class="flex-item" style="order: 2">Item3</div>
+
+    </div>
+
+    <!-- Flex-grow Property -->
+    <div class="flex-container">
+        <div class="flex-item" style="flex-grow: 1">1</div>
+        <div class="flex-item" style="flex-grow: 3">2</div>
+        <div class="flex-item" style="flex-grow: 8">3</div>
+    </div>
+
+
+    <!-- flex-shrink Property-->
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item" style="flex-shrink: 0">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+        <div class="flex-item">12</div>
+        <div class="flex-item">13</div>
+        <div class="flex-item">14</div>
+
+    </div>
+
+    <!-- Flex-basic Property -->
+    <div class="flex-container">
+        <div class="flex-item" style="flex-basis: 300px">Item1</div>
+        <div class="flex-item">Item2</div>
+        <div class="flex-item">Item3</div>
+
+    </div>
+
+    <!-- Make the third flex item
+         not growable (0), not shrinkable (0), and with an initial length of 200 pixels -->
+     <div class="flex-container">
+        <div class="flex-item" style="flex:0 0 300px">Item1</div>
+        <div class="flex-item">Item2</div>
+        <div class="flex-item">Item3</div>
+
+    </div>
+</body>
+
+</html>

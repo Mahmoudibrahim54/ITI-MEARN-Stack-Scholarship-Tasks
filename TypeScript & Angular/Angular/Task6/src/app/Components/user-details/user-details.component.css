@@ -1,0 +1,19 @@
+.loading{
+    position: relative;
+    left:45vw;
+    top:45vh;
+
+}
+.center-card{
+    position: relative;
+    left:35vw;
+    top:20vh;
+}
+.btn-start{
+    position: relative;
+
+}
+.btn-end{
+    position: relative;
+    left:45%
+}

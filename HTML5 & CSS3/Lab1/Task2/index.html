@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body onload="vidInit()">
+    <video src="video/frozen.mp4" controls ontimeupdate="controlTime()" ></video>    
+    <br />
+    <input type="range" value="0" id="vidRange" oninput="vidGoTo(this)"/>
+    <br>
+    <input type="range" id="vol" max="10" oninput="changeVoice(this)"/>
+    <input type="button" value="Mute" onclick="muteVoice(this)">
+    <br>
+    <input type="button" value="Play" onclick="playVid(this)" />
+    <input type="button" value="Pause" onclick="pauseVid(this)" />
+    <input type="button" value="<<" onclick="skipBackward10(this)" />
+    <input type="button" value="<" onclick="skipBackward5(this)" />
+    <input type="button" value=">" onclick="skipForward5(this)" />
+    <input type="button" value=">>" onclick="skipForward10(this)" />
+    <br>
+    <label for="speed">Speed</label>
+    <input type="range" max="16" name="speedS" oninput="changeSpeed(this)">
+
+    <script src="app.js"></script>
+  </body>
+</html>

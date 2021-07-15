@@ -1,0 +1,27 @@
+div{
+    border: 2px solid gray;
+    padding: 10px;
+    width: 450px;
+    height: 250px;
+}
+.form-inp{
+    margin: 10px;
+    height: 25px;
+    width: 270px;
+}
+input[type=button]{
+    margin: 10px;
+    height: 35px;
+    width: 105px;
+}
+.form-inp:empty{
+    border: 2px solid yellow;
+}
+.form-inp:invalid{
+        border: 2px solid red;
+    
+}
+.form-inp:valid{
+    border: 2px solid green;
+
+}

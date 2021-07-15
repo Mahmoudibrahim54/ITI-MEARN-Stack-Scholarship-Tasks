@@ -1,0 +1,14 @@
+<table class="table m-5 justify-content-center">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of studentsArray">
+      <th scope="row">{{s.name}}</th>
+      <td>{{s.age}}</td>
+    </tr>
+  </tbody>
+</table>

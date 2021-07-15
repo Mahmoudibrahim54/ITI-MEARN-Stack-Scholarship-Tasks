@@ -1,0 +1,30 @@
+
+  <table class="table table-bordered border-primary justify-center">
+    <thead>
+        <tr>
+        <th  [appCustom]="{fontColor:'green',font:'fantasy',bgColor:'red'}" colspan="1" rowspan="2">ID</th>
+        <th [appCustom]="{fontColor:'green',font:'fantasy',bgColor:'red'}" colspan="1" rowspan="2">Name</th>
+        <th  [appCustom]="{fontColor:'green',font:'fantasy',bgColor:'red'}" colspan="2" rowspan="1">Address</th>
+        <th [appCustom]="{fontColor:'green',font:'fantasy',bgColor:'red'}" colspan="1" rowspan="2">Details</th>
+
+    </tr>
+    <tr>
+        <th [appCustom]="{fontColor:'green',font:'fantasy',bgColor:'red'}">Street</th>
+        <th [appCustom]="{fontColor:'green',font:'fantasy',bgColor:'red'}">City</th>
+    </tr>
+    </thead>
+    <tbody  *ngFor="let u of users; index as i"> 
+        <tr>
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.address.street}}</td>
+            <td>{{u.address.city  |custom}}</td>
+            <td><a routerLink="{{u.id}}">User {{u.id}} Details</a></td>
+
+        </tr>
+        <!-- <tr>
+            <th>{{u.address.street}}</th>
+            <th>{{u.address.street}}</th>
+        </tr> -->
+    </tbody>
+  </table>

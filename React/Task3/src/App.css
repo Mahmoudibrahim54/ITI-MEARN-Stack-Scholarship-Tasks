@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.cover-txt{
+  font-family: 'Monoton', cursive;
+  font-size: 3rem;
+  color:gray;
+  text-align: center;
+}
+.cover-text-pos{
+  padding-top:15%;
+  color: aliceblue;
+}
+.artist-txt{
+  background-color: royalblue;
+  position: absolute;
+  bottom :0px;
+  width:10%;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.bkg-img{
+  position:relative;
+}
+.artist-txt:any-link{
+  color: black;
+}
+.artist-txt :link,.artist-txt :visited {
+  color: black;
+  text-decoration: none;
+
+}
+.nav-link :visited, .nav-link :link{
+  color:grey;
+  text-decoration: none;
+}

@@ -1,0 +1,22 @@
+div {
+  width: 300px;
+  height: 30px;
+  background-color: lightpink;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  border: 2px solid mediumorchid;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: -5px 5px 10px mediumorchid, -5px -5px 10px mediumorchid,
+    5px 5px 10px mediumorchid, 5px -5px 10px mediumorchid;
+  left: 35vw;
+  position: absolute;
+  top: 40vh;
+}
+div:hover{
+    box-shadow: -5px 5px 10px purple, -5px -5px 10px purple,
+    5px 5px 10px purple, 5px -5px 10px purple;
+    background-color:coral;
+
+}

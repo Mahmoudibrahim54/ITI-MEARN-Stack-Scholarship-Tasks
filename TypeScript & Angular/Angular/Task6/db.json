@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Ali",
+      "age": 47,
+      "position": "FM"
+    },
+    {
+      "id": 3,
+      "name": "Mohamed",
+      "age": 45,
+      "position": "FM"
+    },
+    {
+      "id": 4,
+      "name": "Amr",
+      "age": 24,
+      "position": "SE"
+    },
+    {
+      "name": "Jemi",
+      "age": "20",
+      "position": "Musician ",
+      "id": 5
+    },
+    {
+      "name": "Mark",
+      "age": "33",
+      "position": "Football Player",
+      "id": 6
+    },
+    {
+      "name": "Laila",
+      "age": "16",
+      "position": "Student",
+      "id": 8
+    },
+    {
+      "name": "Menna",
+      "age": "25",
+      "position": "Doctor",
+      "id": 9
+    }
+  ]
+}

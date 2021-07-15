@@ -1,0 +1,17 @@
+<table class="table table-bordered border-primary justify-center">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Position</th>
+      <th>User Info</th>
+      <th>Update</th>
+      <th>Delete</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr app-user-item *ngFor="let u of users" [user]="u" [len]="users.length"></tr>
+  </tbody>
+</table>

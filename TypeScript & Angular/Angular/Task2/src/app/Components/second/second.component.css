@@ -1,0 +1,22 @@
+
+.container{
+    background-color: bisque;
+    width: 30vw;
+    text-align: center;
+    position: relative;
+    left: 35vw;
+
+}
+.container *{
+    margin: 10px auto;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+  table{
+      width:30vw;
+position: relative;  
+left: 35vw;
+}

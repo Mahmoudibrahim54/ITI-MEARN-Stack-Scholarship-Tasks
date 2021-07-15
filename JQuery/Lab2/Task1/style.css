@@ -1,0 +1,36 @@
+#container {
+  width: 50vw;
+  height: 70vh;
+  border: 5px solid red;
+  position: relative;
+
+}
+
+#first-car{
+  position: relative;
+    width: 100%;
+    height: 50%;
+    border-bottom: 5px solid red;
+}
+
+#second-car {
+  position: relative;
+  width: 100%;
+  height: 50%;}
+  
+  
+  img{
+    width :100px;
+    position: relative;
+
+  }
+  #first-car img{
+    top:15vh;
+  }
+  #second-car img{
+    bottom: 25vh;
+  }
+  .winner{
+    display: inline;
+    margin-left: 40vw;
+  }

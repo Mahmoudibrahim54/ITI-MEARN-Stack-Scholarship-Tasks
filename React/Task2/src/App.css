@@ -1,0 +1,7 @@
+.container{
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 20px;
+  align-items: center;
+  justify-content:space-around;
+}

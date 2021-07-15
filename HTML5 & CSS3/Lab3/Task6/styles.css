@@ -1,0 +1,32 @@
+#container{
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+}
+.rect{
+    
+    background-color: red;
+    position: absolute;
+    animation: blink 3s linear 0s 2 normal none;
+    
+     
+    
+}
+@keyframes blink {
+    from {
+        width: 20px;
+        height: 851px;
+        transform:
+        translateX(-415px)
+        translateY(-830px)
+        rotate(135deg)    }
+    to {
+        
+        width: 20px;
+        height: 851px;
+
+        transform:
+      translateX(290px)
+      translateY(-120px)
+      rotate(135deg)}
+  }

@@ -1,0 +1,14 @@
+.container{
+  position: relative;
+  width: 500px;
+  height: 500px; 
+  top:10vh;
+}
+#img{
+    position: absolute;
+    width:25vw;
+    height: 450px;
+}
+.img-vis{
+    visibility: hidden;
+}

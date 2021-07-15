@@ -1,0 +1,62 @@
+@mixin banner{
+    width: 100%;
+    position: relative;
+    color: white;
+    .banner-content{
+      position: absolute;
+      top: 50px;
+      width: 100%;
+    }
+    img{
+      width: 100%;
+    }
+    span{
+      font-size: $bannerHeading;
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include MediaQuery(3000px, 1200px){
+        font-size: 68px;
+      }
+    }
+    span.sub-title{
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    @include MediaQuery(1200px){
+      max-height: 640px;
+      overflow: hidden;
+    }
+  }
+  
+  @mixin clearFix{
+    &:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  
+  @mixin grid($cols, $mgn){
+    float: left;
+    width: ((100% - (($cols - 1) * $mgn)) / $cols );
+    margin-right: $mgn;
+    margin-bottom: $mgn; // edited
+    &:nth-child(#{$cols}n){
+      margin-right: 0;
+    }
+  }
+  
+  @mixin MediaQuery($media){
+    @if length($media) == 1{
+      @media screen and (max-width: nth($media, 1)){
+        @content;
+      }
+    }
+    @if length($media) == 2{
+      @media screen and (max-width: nth($media, 1)) and (min-width: nth($media, 2)){
+        @content;
+      }
+    }
+  }
+  

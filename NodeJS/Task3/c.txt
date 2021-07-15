@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+       
+        @Component({
+        selector: 'app-compName',
+        templateUrl: './compName.component.html',
+        styleUrls: ['./compName.component.css',
+        })
+        export class compNameComponent implements OnInit {
+         
+        constructor() { }
+      
+        ngOnInit(): void {
+        }
+        
+        };

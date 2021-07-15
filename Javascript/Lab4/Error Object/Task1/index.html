@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    input[type=radio]{
+        margin-right:160px;
+        }
+    </style>
+    <title>Cookies</title>
+</head>
+<body>
+    <input type="text" placeholder="Name" oninput="saveName(this)">
+    <br>
+    <input type="text" placeholder="Age">
+    <br>
+    <img src="images/1.jpg" alt="Male">
+    <img src="images/2.jpg" alt="Female">
+    <br>
+    <input type="radio" value="1" name="gender" onclick="saveGender(this)">
+    <input type="radio" value="2" name="gender" onclick="saveGender(this)">
+    <br>
+    <select name="color" id="font-color" onchange="changeColor(this)">
+        <option value="black" selected>choose...</option>
+        <option value="red" >Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <br>
+    <input type="button" value="Submit" onclick="redirect()">
+    <script src="app.js"></script>
+</body>
+</html>

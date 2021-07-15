@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <script src="mspace.js"></script> -->
+
+    <title>Document</title>
+  </head>
+  <body onload="hasMathMLSupport()">
+    <svg width="200" height="200" viewBox="-50 -50 200 200">
+      <polygon points="0 100, 100 100, 100 -50" fill="red" />
+      <text class="svg-txt" x="20" y="30">c</text>
+      <text class="svg-txt" x="105" y="30">b</text>
+      <text class="svg-txt" x="50" y="120">a</text>
+    </svg>
+    <h1>according to pythagoras theorem</h1>
+    <math class="math-txt">
+      <mrow>
+        <mi>c</mi>
+        <mo>=</mo>
+        <msqrt>
+          <msup>
+            <mi>a</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <msup>
+            <mi>b</mi>
+            <mn>2</mn>
+          </msup>
+        </msqrt>
+      </mrow>
+    </math>
+    <script src="Conditionizr.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

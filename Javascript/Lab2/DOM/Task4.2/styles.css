@@ -1,0 +1,19 @@
+.center {
+    text-align: center;
+}
+.pic1{
+    position: absolute;
+    left:5vw;
+    top:65vh;
+}
+
+.pic2{
+    position: absolute;
+    left:80vw;
+    top:5vh;
+}
+.list{
+    position: absolute;
+    display: inline-block;
+    top:45vh;
+}

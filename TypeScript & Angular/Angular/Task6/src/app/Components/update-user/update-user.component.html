@@ -1,0 +1,14 @@
+<div class="row g-3">
+    <div class="col-sm-4">
+      <input #name type="text" class="form-control" [value]="user.name" aria-label="City">
+    </div>
+    <div class="col-sm-3">
+      <input #age type="number" class="form-control" [value]="user.age" aria-label="State">
+    </div>
+    <div class="col-sm-3">
+        <input #position type="text" class="form-control" [value]="user.position" aria-label="State">
+      </div>
+    <div class="col-2">
+        <button type="submit" class="btn btn-primary" (click)=updateUser(name,age,position)>Submit</button>
+      </div>
+  </div>

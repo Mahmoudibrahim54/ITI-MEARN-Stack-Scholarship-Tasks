@@ -1,0 +1,33 @@
+/* Just for demo */
+.c {
+  content: "hello harry";
+}
+
+.d {
+  content: 11;
+}
+
+.e {
+  content: 1;
+}
+
+.g {
+  content: "HELLO";
+}
+
+.h {
+  content: "hello";
+}
+
+.insert {
+  content: "hello harry";
+}
+
+.slice {
+  content: "world";
+}
+
+.slice-end {
+  content: "wo";
+}
+/*# sourceMappingURL=stringFunction.css.css.map */

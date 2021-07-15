@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <canvas id="myCanvas" width="400" height="500">
+
+   </canvas>
+   <script>
+       var canvas = document.getElementById("myCanvas");
+       var context = canvas.getContext("2d");
+       
+       
+       context.beginPath();
+       context.moveTo(0,0);
+       context.lineTo(300,100);
+       //context.lineTo(200,150);
+      // context.lineTo(0,0);
+        //context.closePath();
+       context.lineWidth=5;
+       context.strokeStyle="red";
+       context.fillStyle="yellow";
+       //context.fill();
+       context.stroke();
+
+
+      // context.rect(190,50,200,100);
+    /*  context.strokeStyle="blue";
+        context.strokeRect(190,50,200,100);
+        //context.fillRect(190,50,200,100);
+
+        context.font="26pt Georgia";
+        context.strokeText("This is a Demo",20,110);
+
+
+        /*var grd= context.createLinearGradient(0,0,170,100)
+        grd.addColorStop(0,"blue");
+        grd.addColorStop(0.5,"red");
+        grd.addColorStop(1,"green");
+        context.fillStyle=grd;
+        context.fillRect(20,20,150,100);
+*/
+  /*      var grd_R=context.createRadialGradient(75,50,5,90,60,100);
+        grd_R.addColorStop(0,"White");
+        grd_R.addColorStop(1,"blue");
+        context.fillStyle=grd_R;
+        context.fillRect(20,20,150,100);
+*/
+        //context.arc(300,150,50,0,1.5* Math.PI,true);//default false
+        //context.stroke();
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+       /*
+       
+       
+       
+       */
+   </script>
+</body>
+</html>
